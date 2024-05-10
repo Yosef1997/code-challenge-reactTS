@@ -1,0 +1,6 @@
+export { default as Navbar } from "./Navbar"
+export { default as Footer } from "./Footer"
+export { default as Testimony } from "./Testimony"
+export { default as PriceList } from "./PriceList"
+export { default as Products } from "./Products"
+export { default as Team } from "./Team"
