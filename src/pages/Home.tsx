@@ -2,6 +2,7 @@ import {
   Footer,
   Hero,
   Navbar,
+  Overview,
   PriceList,
   Products,
   Team,
@@ -13,6 +14,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
+      <Overview />
       <Team />
       <Products />
       <Testimony />

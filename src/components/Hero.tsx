@@ -3,7 +3,6 @@ import hero from "../utils/hero"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import responsive from "../utils/CarouselResponsive"
-import HeroCard from "./HeroCard"
 
 const Hero = () => {
   return (
@@ -40,12 +39,6 @@ const Hero = () => {
           )
         })}
       </Carousel>
-      <div className='grid grid-cols-4 p-5 md:p-20 gap-x-1 md:gap-x-10'>
-        <HeroCard num='25+' description='Years of experience' />
-        <HeroCard num='35' description='Amazing employee' />
-        <HeroCard num='99' description='Hours of maintenance' />
-        <HeroCard num='80+' description='Projects completed' />
-      </div>
     </div>
   )
 }
