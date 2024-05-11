@@ -1,4 +1,11 @@
-import { AboutHero, Footer, Navbar, Team } from "../components"
+import {
+  AboutCulture,
+  AboutHero,
+  Footer,
+  Milestone,
+  Navbar,
+  Team,
+} from "../components"
 
 const About = () => {
   return (
@@ -6,6 +13,8 @@ const About = () => {
       <Navbar />
       <AboutHero />
       <Team />
+      <AboutCulture />
+      <Milestone />
       <Footer />
     </div>
   )
