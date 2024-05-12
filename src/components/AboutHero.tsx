@@ -3,9 +3,9 @@ const AboutHero = () => {
     <div className='flex flex-col items-center bg-gradient-to-b from-black to-white p-5 md:p-20'>
       <h1 className='text-white text-3xl text-center font-bold'>About Us</h1>
       <h1 className='text-white text-sm md:text-xl text-center my-5 md:my-10'>
-        TechHub offers top-notch technology services encompassing data center
-        management, cloud computing, web development, IT management, software
-        renewal, and machine learning solutions.
+        TechHub empowers businesses to thrive in the digital age by delivering
+        tailored technology solutions that drive innovation, efficiency, and
+        growth.
       </h1>
       <img
         className='h-[300px] w-full object-cover rounded-xl  md:h-[500px] '

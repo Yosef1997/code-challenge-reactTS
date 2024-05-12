@@ -5,7 +5,9 @@ import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import responsive from "../utils/CarouselResponsive"
 
-const Products = () => {
+const Products: React.FC<{ showNavigation?: boolean }> = ({
+  showNavigation,
+}) => {
   return (
     <div className='bg-product-bg bg-contain flex flex-col gap-y-5 items-center py-5 md:py-20'>
       <div className='flex flex-col items-center px-5 md:px-20'>
@@ -38,7 +40,7 @@ const Products = () => {
       >
         {products.map((e, i) => {
           return (
-            <div key={i} className='ml-5'>
+            <div key={i} className='ml-2 md:ml-5'>
               <ProductCard
                 props={{
                   img: e.img,
@@ -50,12 +52,14 @@ const Products = () => {
           )
         })}
       </Carousel>
-      <Link
-        className='bg-orange p-5 rounded-md text-white font-medium md:mt-10'
-        to={"/products"}
-      >
-        View All Services
-      </Link>
+      {showNavigation ? (
+        <Link
+          className='bg-orange p-3 md:p-5 rounded-md text-white font-medium md:mt-10'
+          to={"/products"}
+        >
+          View All Services
+        </Link>
+      ) : null}
     </div>
   )
 }
