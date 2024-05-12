@@ -4,8 +4,10 @@ export default {
   theme: {
     colors: {
       white: "#FFFFFF",
-      black: "#000000",
-      orange: "#ff9900",
+      black: "#1b1b1b",
+      orange: "#ffa31a",
+      grey: "#808080",
+      "light-black": "#292929",
     },
     extend: {
       backgroundImage: {

@@ -3,6 +3,7 @@ import hero from "../utils/hero"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import responsive from "../utils/CarouselResponsive"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
   return (
@@ -18,10 +19,13 @@ const Hero = () => {
                 <h1 className='bg-white bg-opacity-5 font-bold text-white rounded-xl md:p-5'>
                   {e.text}
                 </h1>
-                <button className=' flex items-center gap-x-3 text-xl font-medium text-white bg-orange px-5 py-2 rounded-lg w-fit'>
+                <Link
+                  to={"/about"}
+                  className=' flex items-center gap-x-3 text-xl font-medium text-white bg-orange px-5 py-2 rounded-lg w-fit'
+                >
                   More Information
                   <BsArrowRightCircle size={20} />
-                </button>
+                </Link>
               </div>
               <div className=' flex flex-col items-center justify-between'>
                 <img className='h-full w-auto' src={e.img} alt='hero-img' />
@@ -30,10 +34,13 @@ const Hero = () => {
                 <h1 className='bg-black bg-opacity-15 font-bold text-white rounded-xl p-5'>
                   {e.text}
                 </h1>
-                <button className=' flex items-center gap-x-3 text-xl font-medium text-white bg-orange px-5 py-2 rounded-lg justify-center md:justify-start md:w-fit'>
+                <Link
+                  to={"/about"}
+                  className=' flex items-center gap-x-3 text-xl font-medium text-white bg-orange px-5 py-2 rounded-lg justify-center md:justify-start md:w-fit'
+                >
                   More Information
                   <BsArrowRightCircle size={20} />
-                </button>
+                </Link>
               </div>
             </div>
           )
