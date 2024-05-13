@@ -84,7 +84,7 @@ const Products: React.FC<{ showNavigation?: boolean }> = ({
       ) : null}
 
       {showModal ? (
-        <div className='fixed bg-grey bg-opacity-70 top-0 bottom-0 right-0 left-0 p-5 md:p-10'>
+        <div className='fixed bg-grey bg-opacity-70 top-0 bottom-0 right-0 left-0 p-5 z-50 md:p-10'>
           <div className=' relative bg-white h-full p-5 md:p-20 rounded-xl'>
             <div className='flex flex-col justify-center items-center gap-x-5 md:gap-x-20'>
               <img
